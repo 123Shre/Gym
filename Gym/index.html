@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/style.css">
+<style>
+    /* CSS reset  */
+    
+    body {
+        font-family: 'Playball', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/Gymer.jpg');
+        height: 1000px;
+    }
+    
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 15px;
+        left: 23px;
+        font-size: 24px;
+        line-height: 21px;
+    }
+    
+    .left img {
+        width: 100px;
+        filter: invert(100%);
+    }
+    
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 15px auto;
+        /* border: 2px solid rgb(217, 255, 0); */
+    }
+    
+    .right {
+        color: pink;
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 23px;
+    }
+    
+    div {
+        color: #13ebfa;
+        text-align: center;
+    }
+    /* .navbar {
+        display: inline-block;
+    } */
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: rgb(90 245 11);
+        padding: 17px 21px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+    
+    .btn {
+        font-family: 'Playball', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 7px;
+        border: 2px solid gray;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: gray;
+    }
+    
+    .container {
+        border: 2px solid red;
+        margin: 197px 426px;
+        padding: 5px;
+        margin-left: 56px;
+        margin-right: 904px;
+        border-radius: 30px;
+    }
+    
+    h1 {
+        /* padding-left: 34px; */
+        text-align: center;
+    }
+    
+    form {
+        padding-left: 30px;
+    }
+    
+    .btn1:hover {
+        color: black;
+        background-color: aqua;
+    }
+    
+    .btn1 {
+        color: white;
+        background-color: black;
+        font-family: 'Playball', cursive;
+        border-radius: 10px;
+        padding: 2px 14px;
+        margin: 1px 149px;
+    }
+    
+    .form-group {
+        width: 34px;
+        margin: 4px;
+        padding: 2px 102px;
+    }
+    
+    .fgroup {
+        width: 288px;
+        border-radius: 10px;
+    }
+    
+    .form-group input {
+        font: bolder;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    form {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/Logo.jpg" alt="">
+            <div>Beast Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#"> About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Nashik</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input class="fgroup" type="text" name="" placeholder="Enter your Phone No.">
+            </div>
+            <button class="btn1">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
